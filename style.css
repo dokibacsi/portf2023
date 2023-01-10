@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(photos/bck/bckgrnd2.png);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'n n'
+                         'ar ar'
+                         'fo fo';
+    width: 80%;
+    margin: auto;
+    border: 2px solid white;
+    max-width: 1100px;
+}
+
+nav{
+    grid-area: n;
+    background-color: rgb(23, 21, 15);
+    border-right: 3px solid white;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'logo menus menus menus menus';
+    
+}
+
+article{
+    grid-area: ar;
+    color: white;
+    width: 100%;
+}
+
+article h1{
+    background-color: white;
+    color: #17150f;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Rubik Vinyl';
+    font-size: 25pt;
+}
+
+article p{
+    background-color: #17150f;
+    color: white;
+    margin: 0;
+    padding: 30px;
+    font-family: 'Gloria Hallelujah';
+    text-align: justify;
+}
+
+article p img{
+    float: right;
+    max-width: 175px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#fooldal{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #aa966b;
+}
+
+.munkak{
+    background-color: #17150f;
+    color: white;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.panel{
+    margin-top: 20px;
+    width: 340px;
+    border: 3px solid white;
+}
+
+.panel img{
+    max-width: 100px;
+
+}
+
+#elerhetoseg p{
+    text-align: center;
+}
+
+.kephatter{
+    border: 3px solid white;
+    width: 150px;
+    padding: 25px 25px 20px 22px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.gomb{
+    padding: 0px 20px 0px 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+    width: 130px;
+}
+
+article h3{
+    background-color: white;
+    color: #17150f;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Rubik Vinyl';
+}
+
+.video{
+    margin: auto;
+    text-align: center;
+    background-color: #17150f;
+    padding: 0px 20px 20px 20px;
+}
+
+.video iframe{
+    width: 560px;
+    height: 315px;
+}
+
+article h2{
+    color:#2a210f;
+    background-color:#aa966b;
+    margin: 0px;
+    border-top: 2px solid #17150f;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Josefin Slab';
+}
+
+.elerhetosegpanel{
+    background-color: #17150f;
+    padding: 10px;
+}
+
+.elerhetosegpanel img{
+    width: 150px;
+    margin: 30px;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+nav img{
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 45px;
+    grid-area: logo;
+}
+
+nav ul li{
+    grid-area: menus;
+    list-style-type: none;
+    margin: 30px 50px 20px 0px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding: 15px;
+    max-width: 400px;
+    text-align: center;
+    transition: 1s;
+    color: white;
+    font-family: 'Zen Dots';
+}
+
+nav ul li:hover{
+    border-left: 3px solid #756749;
+    border-right: 3px solid #756749; 
+    transition: 1s;
+    color: #aa966b;
+}
+
+footer{
+    grid-area: fo;
+    color: #17150f;
+    background-color: white;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+}
+
+body::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+    max-height: 10%;
+}
+
+body::-webkit-scrollbar
+{
+	width: 7px;
+    background: #17150f;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: white;
+
+}
+
+@media screen and (max-width: 1000px) {
+    nav{
+        grid-area: n;
+        background-color: rgb(23, 21, 15);
+        border-right: 3px solid white;
+        margin: 0;
+        display: grid;
+        grid-template-areas: 'logo'
+                             'menus';
+        
+    }
+    
+    nav img{
+        width: 40%;
+        margin-left: 240px;
+        margin-top: 50px;
+        grid-area: logo;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav{
+        grid-area: n;
+        background-color: rgb(23, 21, 15);
+        border-right: 3px solid white;
+        margin: 0;
+        display: grid;
+        grid-template-areas: 'logo'
+                             'menus';
+        
+    }
+    
+    nav img{
+        width: 40%;
+        margin-left: 220px;
+        margin-top: 50px;
+        grid-area: logo;
+    }
+
+    nav ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .munkak{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .panel{
+        margin: auto;
+        margin-top: 20px;
+        width: 350px;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav img{
+        width: 40%;
+        margin-left: 150px;
+        margin-top: 50px;
+        grid-area: logo;
+    }
+
+    .panel{
+        margin: auto;
+        margin-top: 20px;
+        width: 250px;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (max-width: 400px){
+    nav img{
+        width: 60%;
+        margin-left: 70px;
+        margin-top: 50px;
+        grid-area: logo;
+    }
+
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+.clear{
+    clear: both;
+}
